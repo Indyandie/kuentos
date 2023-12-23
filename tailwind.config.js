@@ -3,24 +3,21 @@ module.exports = {
   content: [
     './index.html',
     './src/**/*.{js,jsx,ts,tsx,html}',
-    // Add other file paths or globs as needed
   ],
   theme: {
     extend: {
       colors: {
-        'custom-blue': '#4B9EDF',
-        'custom-hover-blue': '#357ABD',
+        'kuen-blue': '#4B9EDF',
+        'kuen-hover-blue': '#357ABD',
       },
       fontFamily: {
-        'custom-font': ['Arial', 'sans-serif'],
+        'kuen-font': ['Arial', 'sans-serif'],
       },
       spacing: {
-        'custom-padding': '1rem',
+        'kuen-padding': '1rem',
       },
-      // Add other customizations here
     },
   },
-  // ... (other configurations)
 };
 
 

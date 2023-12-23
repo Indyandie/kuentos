@@ -1,10 +1,20 @@
 {
   "name": "kuuento",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/styles.css",
+  "module": "src/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "license": "MIT",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles.css",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^2.x"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

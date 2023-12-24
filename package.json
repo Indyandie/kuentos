@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "dist/styles.css",
   "module": "src/index.js",
+  "type": "module",
   "files": [
     "dist",
     "src"

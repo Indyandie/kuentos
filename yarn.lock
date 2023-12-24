@@ -1098,8 +1098,6 @@ __metadata:
     postcss: "npm:^8.4.32"
     tailwindcss: "npm:^3.4.0"
     vite: "npm:^5.0.10"
-  peerDependencies:
-    tailwindcss: ^2.x
   languageName: unknown
   linkType: soft
 

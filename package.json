@@ -1,8 +1,8 @@
 {
-  "name": "kuuento",
+  "name": "kuentos",
   "version": "1.0.0",
-  "main": "dist/styles.css",
-  "module": "src/index.js",
+  "main": "./dist/styles.css",
+  "module": "./src/index.js",
   "type": "module",
   "files": [
     "dist",
@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles.css",
+    "build": "vite build",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

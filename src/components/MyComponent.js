@@ -1,4 +1,5 @@
-// src/components/MyComponent.js
+import '../styles/tailwind.css'
+
 class MyComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -8,4 +9,7 @@ class MyComponent extends HTMLElement {
     `;
   }
 }
+
 customElements.define('my-component', MyComponent);
+
+export default MyComponent;

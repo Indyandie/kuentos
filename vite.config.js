@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite';
-import path from 'path';
+import { resolve } from 'path'
 
 export default defineConfig({
   // Resolve alias
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': resolve(__dirname, './src'),
     },
   },
   // Configure server options if necessary
@@ -22,7 +22,13 @@ export default defineConfig({
   },
   // Build options
   build: {
-    // Build-specific configurations
+    // Build-specific configuratsions
+    lib: {
+      entry: (__dirname, 'src/main.js'),
+      name: 'Kuentons',
+      // formats: ['es', "umd" ], // Choose formats as needed
+      fileName: (format) => `kuentos.${format}.js`
+    }
   },
   // Plugins (add plugins like React or Vue if you're using them)
   plugins: [
